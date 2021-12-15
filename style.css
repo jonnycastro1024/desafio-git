@@ -34,18 +34,6 @@ input:focus{
     border: 10px solid black;
 } 
 
-div{
-    width: 100px;
-    height: 100px;
-    background-color: green;
-    /* Ahora aplicamos el nombre, duracion, cantidad de veces, y lo que va a tardar */
-    animation-name: nuestro_efecto;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 5s;
-    animation-delay: 5s;
-} 
-
 /* Traemos etiqueta h1 a nuestro CSS */
 h1{
     text-align: center;
