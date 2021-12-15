@@ -1,0 +1,65 @@
+/* Primer div con gradiente */
+#div-uno{
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(to top, red, yellow); 
+    background-image: linear-gradient(to left, red, yellow);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Div con efecto HOVER */
+ div{
+    background-color: crimson;
+    width: 100px;
+    height: 100px;
+    transition: height 3s; width: 3s;
+    transition: all 20s;
+}
+
+div:hover{
+    height: 200px; width: 200px;
+    background-color: aqua;
+} 
+
+/* INPUT CON EFECTO FOCUS */
+ input{
+    width: 100px; height: 50px;
+    transition: all 4s;
+}
+input:focus{
+    width: 200px;
+    font-size: 24px;
+    border: 10px solid black;
+} 
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    /* Ahora aplicamos el nombre, duracion, cantidad de veces, y lo que va a tardar */
+    animation-name: nuestro_efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 5s;
+} 
+
+/* Traemos etiqueta h1 a nuestro CSS */
+h1{
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: opacar;
+    animation-iteration-count: initial;
+}
+/* Determinamos el efecto de la animación */
+
+@keyframes opacar {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
